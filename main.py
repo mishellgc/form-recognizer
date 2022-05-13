@@ -50,7 +50,7 @@ with col1:
         #st.write(file_details)
         #st.write(image_file)    
         # To View Uploaded Image
-        st.image(load_image(image_file),width=250)
+        st.image(load_image(image_file),width=500)
         # Saving uploaded image
         with open(os.path.join("images",image_file.name),"wb") as f:
             f.write((image_file).getbuffer())
